@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="content group">
+	
+	<h4>Here's the detail of your product</h4>
+
+	<h5>Product's ID: <%= @product.id %></h5>
+	<h5>Product's Name: <%= @product.name %></h5>
+	<h5>Product's Description: <%= @product.description %></h5>
+	<h5>Product's Price: <%= @product.price%></h5>
+	<h5>Uploaded <% if @product.created_at > Time.now.beginning_of_day %>
+              		<%="#{time_ago_in_words(@product.created_at)} ago"%>
+              		<br>
+          		<% else %>
+              		<%= @product.created_at.strftime("%m/%d/%Y") %>
+              <br>
+          		<% end %></h5>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="content-container">
+
+<form class="form" action="<%= products_url %>" method="post" enctype="multipart/form-data">
+
+  <h4>What's the product</h4>
+
+  <input
+     name="authenticity_token"
+     type="hidden"
+     value="<%= form_authenticity_token %>">
+
+  <div class="input">
+    <input id="product_name" name="product[name]" type="text" placeholder="Product's Name">
+  </div>
+
+  <div class="input">
+    <input id="product_description" name="product[description]" type="text" placeholder="Product's Description">
+  </div>
+
+  <div class="input">
+    <input id="product_price" name="product[price]" type="text" placeholder="Product's Price">
+  </div>
+
+  <div class="submit">
+    <input id="Upload" type="submit" value="Upload">
+  </div>
+</form>
+
+</div>
