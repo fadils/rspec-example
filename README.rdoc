@@ -1,9 +1,11 @@
 This project is showing you how to use BDD stack in rails 4 to build a simple product listing application.
 
 Things covered:
-BDD in Rails 4 to build a basic app
-Testing model and controller with Rspec
-Testing views using Cucumber:
-- Testing of page's content with a list of products
-- Filling form when uploading a new product to the site
-- Showing the right page when an existing product's link is clicked
+
+- BDD in Rails 4 to build a basic app
+- Testing model and controller with Rspec
+- Testing views using Cucumber:
+
+	- Testing of page's content with a list of products
+	- Filling form when uploading a new product to the site
+	- Showing the right page when an existing product's link is clicked
