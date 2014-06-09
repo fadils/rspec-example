@@ -5,7 +5,8 @@ Things covered:
 - BDD in Rails 4 to build a basic app
 - Testing model and controller with Rspec
 - Testing views using Cucumber:
-
-	- Testing of page's content with a list of products
-	- Filling form when uploading a new product to the site
-	- Showing the right page when an existing product's link is clicked
+	<ul>
+	<li>Testing of page's content with a list of products</li>
+	<li>Filling form when uploading a new product to the site</li>
+	<li>Showing the right page when an existing product's link is clicked</li>
+	</ul>
