@@ -70,14 +70,7 @@ describe ProductsController do
     context "when there are some products" do
       let(:products) do
         [
-
-            Product.create(:name => "Digital Fortress",
-                            :description => "Good",
-                            :price => 1),
-
-            Product.create(:name => "The Path",
-                            :description => "Bad",
-                            :price => 2)
+            FactoryGirl.create(:product)
         ]
       end
 
@@ -85,7 +78,7 @@ describe ProductsController do
         subject { get :index }
         it "assigns @products" do
           subject
-          assigns(:products).should eq(products)
+          assigns(:products).should include(*products)
         end
 
         it "renders the index template" do
@@ -95,10 +88,17 @@ describe ProductsController do
       end
 
     context "when there are no products" do
+      let(:products) do
+        [
+            FactoryGirl.create(:product)
+        ]
+      end
+
       subject { get :index }
+
       it "assigns @products" do
         subject
-        assigns(:products).should eq([])
+        assigns(:products).should_not eq([])
       end
     end
 
