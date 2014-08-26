@@ -10,3 +10,7 @@ Cucumber scope including:
 - Testing of page's content with a list of products (basic feature scenario and steps)
 - Filling form when uploading a new product to the site (basic form filling in Cucumber)
 - Showing the right page when an existing product's link is clicked
+
+After clone, then you can do:
+bundle exec rspec spec/
+bin/cucumber features/
